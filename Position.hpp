@@ -25,7 +25,7 @@ public:
     void moveSouthWest() { ++y; --x; };
     void setPosition(int y, int x) { this->x = x; this->y = y; };
     void setPosition(Coordinates coor) { this->x = coor.second; this->y = coor.first; };
-    std::pair<int, int> getCoordinates() { return std::make_pair(this->y, this->x); };
+    Coordinates getCoordinates() { return std::make_pair(this->y, this->x); };
     int xPos(){ return x; };
     int yPos(){ return y; };
     void movePosition(Direction);
